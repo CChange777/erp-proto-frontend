@@ -1,0 +1,5 @@
+<div *ngFor="let stakeholder of stakeholders$ | async">
+  <app-single-stakeholder [stakeholder]="stakeholder"></app-single-stakeholder>
+</div>
+<app-single-stakeholder [stakeholder]="newStakeHolder"></app-single-stakeholder>
+<button (click)="submitStuff()">SAVE ABOVE</button>
